@@ -1,1 +1,11 @@
-<p>empleados works!</p>
+
+Codigo<input type="text" [(ngModel)]="empleado.id"><br>
+Nombre<input type="text" [(ngModel)]="empleado.nombre"><br>
+Apellido materno<input type="text" [(ngModel)]="empleado.apellido_materno"><br>
+Apellido Paterno<input type="text" [(ngModel)]="empleado.apellido_paterno"><br>
+Puesto<input type="text" [(ngModel)]="empleado.puesto"><br>
+Sueldo<input type="text" [(ngModel)]="empleado.sueldo"><br>
+
+
+<input type="button" value="Guardar" (click)="guardarempleado()">
+

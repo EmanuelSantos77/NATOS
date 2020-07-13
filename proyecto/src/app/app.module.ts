@@ -1,7 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import {FormsModule} from '@angular/forms';
+
+
+//declaración de servicios
+import { EmpleadosService } from './servicios/empleados.service';
+import { ClientesService } from './servicios/clientes.service';
+import { ProveedoresService } from './servicios/proveedores.service';
+import { ArticulosService } from './servicios/articulos.service';
+import { TarimasService } from './servicios/tarimas.service';
+import { LoginService } from './servicios/login.service';
+
+//declaración de componentes
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { InicioComponent } from './inicio/inicio.component';
@@ -18,6 +30,7 @@ import { ClientesComponent } from './clientes/clientes.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { TarimasComponent } from './tarimas/tarimas.component';
+
 
 @NgModule({
   declarations: [
@@ -36,13 +49,22 @@ import { TarimasComponent } from './tarimas/tarimas.component';
     ClientesComponent,
     ProveedoresComponent,
     ArticulosComponent,
-    TarimasComponent
+    TarimasComponent,
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers:[ //Aquí van los servicios
+    EmpleadosService,
+    ClientesService,
+    ProveedoresService,
+    ArticulosService,
+    TarimasService,
+    LoginService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
