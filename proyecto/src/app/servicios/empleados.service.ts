@@ -19,4 +19,19 @@ export class EmpleadosService {
     return this.http.post<any>(this.EmpleadoIns,empleados) 
   }
 
+  //metodo modificar
+  modificarEmpleado(empleados){
+    return this.http.put<any>(this.EmpleadoMod,empleados);
+  }
+
+  //metodo eliminar
+  eliminarEmpleado(empleados){
+    return this.http.post<any>(this.EmpleadoEli, empleados);
+  }
+
+  //metodo consultar
+  consultartodoEmpleado(){
+    return this.http.get<any>(this.EmpleadoCons)
+  }
+
 }
