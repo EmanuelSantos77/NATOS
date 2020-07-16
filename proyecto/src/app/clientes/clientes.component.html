@@ -1,1 +1,39 @@
-<p>clientes works!</p>
+<h1>clientes</h1>
+
+Codigo<input type="text" [(ngModel)]="cliente.id"><br>
+Empresa<input type="text" [(ngModel)]="cliente.empresa"><br>
+Nombre<input type="text" [(ngModel)]="cliente.nombre"><br>
+Apellido Paterno<input type="text" [(ngModel)]="cliente.apellido_paterno"><br>
+Apellido Materno <input type="text" [(ngModel)]="cliente.apellido_materno"><br>
+Puesto<input type="text" [(ngModel)]="cliente.puesto"><br>
+Tipo de persona<input type="text" [(ngModel)]="cliente.tipo_persona"><br>
+
+
+<input type="button" value="Guardar" (click)="guardarcliente()">
+<input type="button" value="Modificar" (click)="modificarcliente()">
+<input type="button" value="Eliminar" (click)="eliminarcliente()">
+<input type="button" value="Consultar todo" (click)="consultartodocliente()">
+
+<table>
+    <tr>
+        <td>ID</td>
+        <td>EMPRESA</td>
+        <td>NOMBRE</td>
+        <td>APELLIDO PATERNO</td>
+        <td>APELLIDO MATERNO</td>
+        <td>PUESTO</td>
+        <td>RFC</td>
+        <td>TIPO DE PERSONA</td>
+    </tr>
+    <tr *ngFor="let cli of clientes | async">
+        <td>{{ cli.id }}</td>
+        <td>{{ cli.empresa }}</td>
+        <td>{{ cli.nombre }}</td>
+        <td>{{ cli.apellido_paterno }}</td>
+        <td>{{ cli.apellido_materno }}</td>
+        <td>{{ cli.puesto }}</td>
+        <td>{{ cli.rfc }}</td>
+        <td>{{ cli.tipo_persona }}</td>
+
+    </tr>
+</table>

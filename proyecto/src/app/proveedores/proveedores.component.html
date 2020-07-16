@@ -1,1 +1,42 @@
-<p>proveedores works!</p>
+<h1>Proveedores</h1>
+
+Codigo<input type="text" [(ngModel)]="proveedor.id"><br>
+Empresa<input type="text" [(ngModel)]="proveedor.empresa"><br>
+Nombre<input type="text" [(ngModel)]="proveedor.nombre"><br>
+Apellido Paterno<input type="text" [(ngModel)]="proveedor.apellido_paterno"><br>
+Apellido Materno<input type="text" [(ngModel)]="proveedor.apellido_materno"><br>
+Puesto<input type="text" [(ngModel)]="proveedor.puesto"><br>
+rfc<input type="text" [(ngModel)]="proveedor.rfc"><br>
+tipo_persona<input type="text" [(ngModel)]="proveedor.tipo_persona"><br>
+
+
+
+<input type="button" value="Guardar" (click)="guardarproveedor()">
+<input type="button" value="Modificar" (click)="modificarproveedor()">
+<input type="button" value="Eliminar" (click)="eliminarproveedor()">
+<input type="button" value="Consultar todo" (click)="consultartodoproveedor()">
+
+<table>
+    <tr>
+        <td>ID</td>
+        <td>EMPRESA</td>
+        <td>NOMBRE</td>
+        <td>APELLIDO PATERNO</td>
+        <td>APELLIDO MATERNO</td>
+        <td>PUESTO</td>
+        <td>RFC</td>
+        <td>TIPO DE PERSONA</td>
+    </tr>
+    <tr *ngFor="let pro of proveedores | async">
+        <td>{{ pro.id }}</td>
+        <td>{{ pro.empresa }}</td>
+        <td>{{ pro.nombre }}</td>
+        <td>{{ pro.apellido_paterno }}</td>
+        <td>{{ pro.apellido_materno }}</td>
+        <td>{{ pro.puesto }}</td>
+        <td>{{ pro.rfc }}</td>
+        <td>{{ pro.tipo_persona }}</td>
+
+    </tr>
+</table>
+

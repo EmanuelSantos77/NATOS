@@ -1,1 +1,33 @@
-<p>tarimas works!</p>
+<h1>Tarimas</h1>
+
+Codigo<input type="text" [(ngModel)]="tarima.id"><br>
+Descripción<input type="text" [(ngModel)]="tarima.descripcion"><br>
+Tipo<input type="text" [(ngModel)]="tarima.tipo"><br>
+Cantidad<input type="text" [(ngModel)]="tarima.cantidad"><br>
+Precio<input type="text" [(ngModel)]="tarima.precio"><br>
+
+
+
+<input type="button" value="Guardar" (click)="guardartarima()">
+<input type="button" value="Modificar" (click)="modificartarima()">
+<input type="button" value="Eliminar" (click)="eliminartarima()">
+<input type="button" value="Consultar todo" (click)="consultartodotarima()">
+
+<table>
+    <tr>
+        <td>ID</td>
+        <td>DESCRIPCIÓN</td>
+        <td>TIPO</td>
+        <td>CANTIDAD</td>
+        <td>PRECIO</td>
+    </tr>
+    <tr *ngFor="let tar of tarimas | async">
+        <td>{{ tar.id }}</td>
+        <td>{{ tar.descripcion }}</td>
+        <td>{{ tar.tipo }}</td>
+        <td>{{ tar.cantidad }}</td>
+        <td>{{ tar.precio }}</td>
+
+    </tr>
+</table>
+
