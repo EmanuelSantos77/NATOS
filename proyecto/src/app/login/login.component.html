@@ -1,0 +1,9 @@
+<h3>Inicio de sesion</h3>
+
+    <label class="text-primary"><b>Ingresa tu nombre de usuario</b></label><br>
+    <input class="text-primary" [(ngModel)]="usuario.username"  placeholder="Nombre de usuario">
+    <br>
+    <label class="text-primary"><b>Ingresa tu contraseña</b></label> <br>
+    <input class="text-primary" [(ngModel)]="usuario.password"  placeholder="contraseña"><br>
+    <button class="btn-dark" (click)="login()">Entrar</button>
+
