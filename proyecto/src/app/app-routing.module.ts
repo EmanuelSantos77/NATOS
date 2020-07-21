@@ -10,6 +10,9 @@ import { IniciarComponent } from './iniciar/iniciar.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { CopyComponent } from './copy/copy.component';
 import { EmpleadosComponent } from './empleados/empleados.component';
+import { TarimasComponent } from './tarimas/tarimas.component';
+import { ClientesComponent } from './clientes/clientes.component';
+import { ProveedoresComponent } from './proveedores/proveedores.component';
 
 
 const routes: Routes = [
@@ -23,6 +26,10 @@ const routes: Routes = [
   {path: 'Registrar', component:RegistrarComponent},
   {path: 'Copy', component:CopyComponent},
   {path: 'Empleados', component:EmpleadosComponent},
+  {path: 'Tarimas', component:TarimasComponent},
+  {path: 'Clientes', component: ClientesComponent},
+  {path: 'Proveedores', component:ProveedoresComponent },
+  
   
 
 
