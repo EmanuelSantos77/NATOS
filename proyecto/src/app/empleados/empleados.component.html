@@ -1,4 +1,6 @@
+<div align="center" class="container section" > 
 <h1>Empleados</h1>
+<br><br><br>
 Codigo<input type="text" [(ngModel)]="empleado.id"><br>
 Nombre<input type="text" [(ngModel)]="empleado.nombre"><br>
 Apellido materno<input type="text" [(ngModel)]="empleado.apellido_materno"><br>
@@ -12,7 +14,9 @@ Sueldo<input type="text" [(ngModel)]="empleado.sueldo"><br>
 <input type="button" value="Eliminar" (click)="eliminarempleado()">
 <input type="button" value="Consultar todo" (click)="consultartodoempleado()">
 
-<table>
+
+
+<table> 
     <tr>
         <td>ID</td>
         <td>NOMBRE</td>
@@ -30,4 +34,9 @@ Sueldo<input type="text" [(ngModel)]="empleado.sueldo"><br>
         <td>{{ emp.sueldo }}</td>
     </tr>
 </table>
+
+</div>
+
+
+
 

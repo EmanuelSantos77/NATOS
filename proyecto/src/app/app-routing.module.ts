@@ -9,6 +9,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { IniciarComponent } from './iniciar/iniciar.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { CopyComponent } from './copy/copy.component';
+import { EmpleadosComponent } from './empleados/empleados.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'Iniciar', component:IniciarComponent},
   {path: 'Registrar', component:RegistrarComponent},
   {path: 'Copy', component:CopyComponent},
+  {path: 'Empleados', component:EmpleadosComponent},
   
 
 
