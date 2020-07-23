@@ -30,6 +30,7 @@ export class EmpleadosComponent implements OnInit {
     this.empleadoservicio.insertarEmpleado(this.empleado)
     .subscribe(res=>{
       alert("El empleado ha sido registrado con éxito")
+      this.consultartodoempleado()
       this.limpiarempleado()
     },
     err=> console.log(err))
@@ -47,9 +48,10 @@ export class EmpleadosComponent implements OnInit {
 
   //metodo eliminar
   eliminarempleado(){
-    this.empleadoservicio.eliminarEmpleado(this.eliminarempleado)
+    this.empleadoservicio.eliminarEmpleado(this.empleado)
     .subscribe(res=>{
       alert("El empleado ha sido eliminado con éxito")
+      this.consultartodoempleado()
       this.limpiarempleado()
     })
   }
@@ -65,7 +67,7 @@ export class EmpleadosComponent implements OnInit {
     this.empleado.id=""
     this.empleado.nombre=""
     this.empleado.apellido_paterno=""
-    this.empleado.apellido_paterno=""
+    this.empleado.apellido_materno=""
     this.empleado.puesto=""
     this.empleado.sueldo=""
   }
