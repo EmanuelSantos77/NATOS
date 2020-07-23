@@ -6,12 +6,19 @@ import { HttpClient } from '@angular/common/http'; //se importa para la comunica
 })
 export class LoginService {
 
-  private Loginurl = ""
+  private Loginurl = "http://localhost:3000/user/login"
+  private Registrarurl = "http://localhost:3000/user/registrar"
+
 
   constructor(private http: HttpClient) { }
 
+  //metodo registrar usuario
+  registrar(usuarios) {
+    return this.http.post<any>(this.Registrarurl, usuarios)
+  }
+
   //metodo para inicar sesión
-  login(usuarios){
-    return this.http.post<any>(this.Loginurl,usuarios)
+  login(usuarios) {
+    return this.http.post<any>(this.Loginurl, usuarios)
   }
 }

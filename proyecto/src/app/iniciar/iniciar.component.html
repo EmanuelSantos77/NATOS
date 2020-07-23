@@ -9,11 +9,10 @@
 
 <form class="box" action="" method="">
   <h1>Iniciar Sesion</h1>
-  <input type="text" name="" placeholder="Usuario">
-  <input type="password" name="" placeholder="Contraseña">
-  <input type="submit" name="" value="Iniciar">
+  <input type="text" [(ngModel)]="usuario.username" placeholder="Usuario">
+  <input type="password" [(ngModel)]="usuario.password" placeholder="Contraseña">
+  <input type="submit" (click)="login()" value="Iniciar">
 </form>
-
 
   </body>
 </html>
