@@ -24,7 +24,7 @@ export class ClientesComponent implements OnInit {
   constructor(private clienteservicio:ClientesService) { }
 
   ngOnInit(): void {
-    this.consultartodocliente();
+    //this.consultartodocliente();
   }
 
   //metodo guardar empleado
@@ -32,7 +32,7 @@ export class ClientesComponent implements OnInit {
     this.clienteservicio.insertarCliente(this.cliente)
     .subscribe(res=>{
       alert("El cliente ha sido registrado con éxito")
-      this.limpiarcliente()
+      //this.limpiarcliente()
     },
     err=> console.log(err))
   }
@@ -43,15 +43,15 @@ export class ClientesComponent implements OnInit {
     .subscribe(res=>{
       alert("El cliente ha sido modificado con éxito")
       this.consultartodocliente()
-      this.limpiarcliente()
+      //this.limpiarcliente()
     })
   }
 
   eliminarcliente(){
-    this.clienteservicio.eliminarCliente(this.cliente)
+    this.clienteservicio.eliminarCliente(this.eliminarcliente)
     .subscribe(res=>{
       alert("El cliente ha sido eliminado con éxito")
-      this.limpiarcliente()
+      //this.limpiarempleado()
     })
   }
 
@@ -61,7 +61,8 @@ export class ClientesComponent implements OnInit {
   }
 
   //metodo limpiar campos
-  limpiarcliente(){
+  /*limpiarcliente(){
+    //esto para que se limpien los campos
     this.cliente.id=""
     this.cliente.empresa=""
     this.cliente.nombre=""
@@ -70,6 +71,6 @@ export class ClientesComponent implements OnInit {
     this.cliente.puesto=""
     this.cliente.rfc=""
     this.cliente.tipo_persona=""
-  }
+  }*/
 
 }

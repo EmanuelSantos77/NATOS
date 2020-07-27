@@ -28,7 +28,7 @@ export class TarimasComponent implements OnInit {
     this.tarimaservicio.insertarTarima(this.tarima)
     .subscribe(res=>{
       alert("El artículo ha sido registrado con éxito")
-      this.limpiarempleado()
+      //this.limpiarempleado()
     },
     err=> console.log(err))
   }
@@ -39,7 +39,7 @@ export class TarimasComponent implements OnInit {
     .subscribe(res=>{
       alert("El artículo ha sido modificado con éxito")
       this.consultartodotarima();
-      this.limpiarempleado()
+      //this.limpiarempleado()
     })
   }
 
@@ -48,7 +48,7 @@ export class TarimasComponent implements OnInit {
     this.tarimaservicio.eliminarTarima(this.tarima)
     .subscribe(res=>{
       alert("El producto ha sido eliminado con éxito")
-      this.limpiarempleado()
+      //this.limpiarempleado()
     })
   }
 
@@ -58,13 +58,15 @@ export class TarimasComponent implements OnInit {
   }
 
   //metodo limpiar campos
-  limpiarempleado(){
-    this.tarima.id=""
-    this.tarima.descripcion=""
-    this.tarima.tipo=""
-    this.tarima.cantidad=""
-    this.tarima.precio=""
-  }
+  /*limpiarempleado(){
+    //esto para que se limpien los campos
+    this.empleado.id=""
+    this.empleado.nombre=""
+    this.empleado.apellido_paterno=""
+    this.empleado.apellido_paterno=""
+    this.empleado.puesto=""
+    this.empleado.sueldo=""
+  }*/
 
 
 }

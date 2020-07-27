@@ -49,7 +49,8 @@ import { TarimasComponent } from './tarimas/tarimas.component';
     ClientesComponent,
     ProveedoresComponent,
     ArticulosComponent,
-    TarimasComponent
+    TarimasComponent,
+    LoginComponent,
   ],
   imports: [ 
     BrowserModule,

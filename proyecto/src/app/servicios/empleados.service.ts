@@ -21,7 +21,7 @@ export class EmpleadosService {
 
   //metodo modificar
   modificarEmpleado(empleados){
-    return this.http.put<any>(this.EmpleadoMod, empleados);
+    return this.http.put<any>(this.EmpleadoMod,empleados);
   }
 
   //metodo eliminar

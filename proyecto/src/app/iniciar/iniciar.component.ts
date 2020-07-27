@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from '../servicios/login.service';
 
 @Component({
   selector: 'app-iniciar',
@@ -8,24 +7,9 @@ import { LoginService } from '../servicios/login.service';
 })
 export class IniciarComponent implements OnInit {
 
-  usuario = {
-    codigo: "",
-    username: "",
-    password: ""
-  }
-
-  constructor(private loginservicio: LoginService) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  //metodo inciar sesion
-  login() {
-    this.loginservicio.login(this.usuario).subscribe(res => {
-      alert('¡Bienvenido!')
-    },
-      err => console.log(err)
-    )
   }
 
 }
