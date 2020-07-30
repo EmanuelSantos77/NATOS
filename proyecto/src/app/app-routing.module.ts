@@ -13,6 +13,8 @@ import { EmpleadosComponent } from './empleados/empleados.component';
 import { TarimasComponent } from './tarimas/tarimas.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
+import { ArticulosComponent } from './articulos/articulos.component';
+import { ComprasComponent } from './compras/compras.component';
 
 
 const routes: Routes = [
@@ -29,6 +31,8 @@ const routes: Routes = [
   {path: 'Tarimas', component:TarimasComponent},
   {path: 'Clientes', component: ClientesComponent},
   {path: 'Proveedores', component:ProveedoresComponent },
+  {path: 'Articulos', component: ArticulosComponent },
+  {path: 'Compras', component: ComprasComponent },
   
   
 
