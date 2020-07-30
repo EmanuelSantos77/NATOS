@@ -21,6 +21,7 @@ export class ArticulosComponent implements OnInit {
   constructor(private articuloservicio: ArticulosService) { }
 
   ngOnInit(): void {
+    this.consultartodoarticulo()
   }
 
   //metodo guardar empleado
@@ -29,6 +30,7 @@ export class ArticulosComponent implements OnInit {
       .subscribe(res => {
         alert("El articulo ha sido registrado con éxito")
         this.limpiararticulo()
+        this.consultartodoarticulo()
       },
         err => console.log(err))
   }

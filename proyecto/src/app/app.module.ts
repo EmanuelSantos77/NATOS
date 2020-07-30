@@ -12,6 +12,7 @@ import { ProveedoresService } from './servicios/proveedores.service';
 import { ArticulosService } from './servicios/articulos.service';
 import { TarimasService } from './servicios/tarimas.service';
 import { LoginService } from './servicios/login.service';
+import { ComprasService } from './servicios/compras.service';
 
 //declaración de componentes
 import { AppComponent } from './app.component';
@@ -31,7 +32,7 @@ import { LoginComponent } from './login/login.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { TarimasComponent } from './tarimas/tarimas.component';
-//import { LoginComponent } from './login/login.component';
+import { ComprasComponent } from './compras/compras.component';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { TarimasComponent } from './tarimas/tarimas.component';
     ArticulosComponent,
     TarimasComponent,
     LoginComponent,
+    ComprasComponent,
   ],
   imports: [ 
     BrowserModule,
@@ -66,7 +68,8 @@ import { TarimasComponent } from './tarimas/tarimas.component';
     ProveedoresService,
     ArticulosService,
     TarimasService,
-    LoginService
+    LoginService,
+    ComprasService
   ],
   bootstrap: [AppComponent]
 })
