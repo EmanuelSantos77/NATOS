@@ -27,6 +27,7 @@ import { RegistrarComponent } from './registrar/registrar.component';
 import { CopyComponent } from './copy/copy.component';
 import { EmpleadosComponent } from './empleados/empleados.component';
 import { ClientesComponent } from './clientes/clientes.component';
+import { LoginComponent } from './login/login.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { TarimasComponent } from './tarimas/tarimas.component';
