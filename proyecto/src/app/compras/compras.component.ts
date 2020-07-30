@@ -63,11 +63,11 @@ export class ComprasComponent implements OnInit {
   //metodo limpiar campos
   limpiarcompra() {
     //esto para que se limpien los campos
-    this.articulo.id = ""
-    this.articulo.descripcion = ""
-    this.articulo.cantidad = ""
-    this.articulo.precio = ""
-    this.articulo.proveedor = ""
+    this.compra.id = ""
+    this.compra.id_articulo
+    this.compra.descripcion_articulo = ""
+    this.compra.cantidad_articulo = ""
+    this.compra.precio_articulo = ""
   }
 
 }
