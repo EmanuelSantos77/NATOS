@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http'; //Ayuda a tener comunicación
   providedIn: 'root'
 })
 export class EmpleadosService {
+
   //declaración de rutas de express
   private EmpleadoIns = 'http://localhost:3000/empleado/insertar';
   private EmpleadoMod = 'http://localhost:3000/empleado/modificar';
@@ -12,7 +13,7 @@ export class EmpleadosService {
   private EmpleadoCons = 'http://localhost:3000/empleado/consultar';
 
   constructor(private http:HttpClient) { }
-  //declaración de metodos
+
 
   //metodo insertar
   insertarEmpleado(empleados){
@@ -33,5 +34,4 @@ export class EmpleadosService {
   consultartodoEmpleado(){
     return this.http.get<any>(this.EmpleadoCons)
   }
-
 }

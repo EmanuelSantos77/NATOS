@@ -14,8 +14,6 @@ private ArticuloCons = 'http://localhost:3000/articulo/consultar';
 
   constructor(private http:HttpClient) { }
 
-  //declaración de metodos
-
   //metodo insertar
   insertarArticulo(articulos){
     return this.http.post<any>(this.ArticuloIns, articulos) 
