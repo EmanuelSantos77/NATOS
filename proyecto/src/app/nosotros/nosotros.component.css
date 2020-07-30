@@ -12,11 +12,6 @@ img:hover {
     -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 
-
-
-
-
-
 .container-gallery
         {
             width: 100%;
@@ -34,6 +29,7 @@ img:hover {
             -webkit-perspective: 1000;
             perspective: 1000;
             position: relative;
+        
             
         }
     
@@ -100,4 +96,9 @@ img:hover {
                 transform: translateZ(3px) translateY(-15px);
                 -webkit-transition: .1s;
                 transition: .1s;
+            }
+
+            .fundacion {
+
+                border-radius: 20px;
             }

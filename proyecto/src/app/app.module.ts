@@ -30,6 +30,7 @@ import { ClientesComponent } from './clientes/clientes.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { TarimasComponent } from './tarimas/tarimas.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
