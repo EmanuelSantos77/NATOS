@@ -20,7 +20,6 @@ import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
-import { OfertasComponent } from './ofertas/ofertas.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
 import { SugerenciasComponent } from './sugerencias/sugerencias.component';
 import { ContactoComponent } from './contacto/contacto.component';
@@ -43,7 +42,6 @@ import { VentasComponent } from './ventas/ventas.component';
     SidenavComponent,
     InicioComponent,
     NosotrosComponent,
-    OfertasComponent,
     CatalogoComponent,
     SugerenciasComponent,
     ContactoComponent,
