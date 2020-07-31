@@ -22,6 +22,7 @@ export class ComprasComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.consultartodocompra()
   }
 
   //metodo guardar empleado
@@ -46,7 +47,7 @@ export class ComprasComponent implements OnInit {
   }
 
   //metodo eliminar
-  eliminararcompra() {
+  eliminarcompra() {
     this.compraservicio.eliminarCompra(this.compra)
       .subscribe(res => {
         alert("La solicitud de compra ha sido eliminado con éxito")
