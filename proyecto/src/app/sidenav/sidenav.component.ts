@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from '../servicios/login.service';
 
 @Component({
   selector: 'app-sidenav',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
 
-  constructor() { }
+  entrar=''
+
+  constructor(private loginservicio:LoginService) { }
 
   ngOnInit(): void {
   }

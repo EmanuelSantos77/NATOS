@@ -9,8 +9,7 @@
         
             <div>
             <!--Boton para iiciar sesion-->
-            
-            <a routerLink="Iniciar" class="waves-effect  text-white black  btn-small" style="border-radius: 20px;"><i class="material-icons left">keyboard_tab</i>Inicias Sesion</a>
+            <a routerLink="Iniciar" class="waves-effect  text-white black  btn-small" style="border-radius: 20px;"><i class="material-icons left">keyboard_tab</i>Iniciar Sesión</a>
             &nbsp;
             <!--boton de registrarse-->
             <a routerLink="Registrar" class="waves-effect text-white black btn-small" style="border-radius: 20px;"><i class="material-icons left">person_add</i>Registrarse</a>
@@ -101,7 +100,7 @@
     
         
     
-            <li>
+            <li *ngIf="entrar">
                 <a routerLink="Tarimas" href="#" >
                 <i class="material-icons">blur_linear</i>
                 Tarimas
@@ -110,21 +109,21 @@
             
             </li>
     
-            <li>
+            <li *ngIf="entrar">
                 <a routerLink="Empleados" href="#" >
                 <i class="material-icons">add_box</i>
                 Empleados
                 </a>
     
              </li>
-             <li>
+             <li *ngIf="entrar">
                 <a routerLink="Clientes" href="#" >
                 <i class="material-icons">account_circle</i>
                 Clientes
                 </a>
     
              </li>
-             <li>
+             <li *ngIf="entrar">
                 <a routerLink="Proveedores" href="#" >
                 <i class="material-icons">airport_shuttle</i>
                 Proveedores
@@ -133,7 +132,7 @@
              </li>
              
 
-            <li>
+            <li *ngIf="entrar">
                 <a href="#" routerLink="Articulos">
                 <i class="material-icons">build</i>
                 Articulos
@@ -143,7 +142,7 @@
             </li>
 
             
-            <li>
+            <li *ngIf="entrar">
                 <a href="#" routerLink="Ventas">
                 <i class="material-icons">shopping_basket</i>
                 Ventas
@@ -152,7 +151,7 @@
             
             </li>
 
-            <li>
+            <li *ngIf="entrar">
                 <a href="#" routerLink="Compras">
                 <i class="material-icons">shop_two</i>
                 Compras
@@ -165,7 +164,7 @@
         
     
             <div class="divider"></div>
-            <li>
+            <li *ngIf="entrar">
                <a href="#" routerLink="Copy">
                <i class="material-icons">copyright</i>
                NATOS

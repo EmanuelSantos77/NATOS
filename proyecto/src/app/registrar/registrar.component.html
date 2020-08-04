@@ -1,1 +1,12 @@
-<p>registrar works!</p>
+<h3>Ingresar los datos a registrar</h3>
+
+ <label class="text-primary"><b>Ingresa el código</b></label> <br>
+    <input class="text-primary" [(ngModel)]="usuario.codigo" type="text" placeholder="Código">
+    <br>
+<label class="text-primary"><b>Ingresa tu nombre de usuario</b></label> <br>
+    <input class="text-primary" [(ngModel)]="usuario.username"  placeholder="Nombre de usuario">
+    <br>    
+<label class="text-primary"><b>Ingresa tu contraseña</b></label> <br>
+    <input class="text-primary" [(ngModel)]="usuario.password"  placeholder="Contraseña">
+    <br>
+    <button class="btn-dark" (click)="insertar()">Entrar</button>

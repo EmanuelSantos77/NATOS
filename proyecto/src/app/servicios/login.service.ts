@@ -14,4 +14,8 @@ export class LoginService {
   login(usuarios){
     return this.http.post<any>(this.Loginurl,usuarios)
   }
+
+  eslogueado(){
+    return !!localStorage.getItem('token')
+  }
 }

@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<h3>Inicio de sesion</h3>
+
+    <label class="text-primary"><b>Ingresa tu nombre de usuario</b></label><br>
+    <input class="text-primary" [(ngModel)]="usuario.username"  placeholder="cbarbosa@email.com">
+    <br>
+    <label class="text-primary"><b>Ingresa tu contraseña</b></label> <br>
+    <input class="text-primary" [(ngModel)]="usuario.password"  placeholder="Password"><br>
+    <button class="btn-dark" (click)="login()">Iniciar sesión</button>
+
+<!--<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -16,4 +25,4 @@
 
 
   </body>
-</html>
+</html>-->

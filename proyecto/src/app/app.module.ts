@@ -12,8 +12,9 @@ import { ProveedoresService } from './servicios/proveedores.service';
 import { ArticulosService } from './servicios/articulos.service';
 import { TarimasService } from './servicios/tarimas.service';
 import { LoginService } from './servicios/login.service';
-import { ComprasService } from './servicios/compras.service';
 import { VentasService } from './servicios/ventas.service';
+import { ComprasService } from './servicios/compras.service';
+import { RegistrarService } from './servicios/registrar.service';
 
 //declaración de componentes
 import { AppComponent } from './app.component';
@@ -28,7 +29,6 @@ import { RegistrarComponent } from './registrar/registrar.component';
 import { CopyComponent } from './copy/copy.component';
 import { EmpleadosComponent } from './empleados/empleados.component';
 import { ClientesComponent } from './clientes/clientes.component';
-import { LoginComponent } from './login/login.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { TarimasComponent } from './tarimas/tarimas.component';
@@ -53,7 +53,6 @@ import { VentasComponent } from './ventas/ventas.component';
     ProveedoresComponent,
     ArticulosComponent,
     TarimasComponent,
-    LoginComponent,
     ComprasComponent,
     VentasComponent,
   ],
@@ -71,7 +70,8 @@ import { VentasComponent } from './ventas/ventas.component';
     TarimasService,
     LoginService,
     ComprasService,
-    VentasService
+    VentasService,
+    RegistrarService
   ],
   bootstrap: [AppComponent]
 })

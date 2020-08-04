@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RegistrarService } from '../servicios/registrar.service';
 
 @Component({
   selector: 'app-registrar',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrarComponent implements OnInit {
 
-  constructor() { }
+  usuario={
+    codigo:"",
+    username:"",
+    password:""
+  }
+
+  constructor(private registrarservicio:RegistrarService) { }
 
   ngOnInit(): void {
+  }
+
+  insertar(){
+    this.registrarservicio.insertar(this.usuario).subscribe(res =>{
+      console.log(res)
+    },
+    err => console.log(err)
+    )
   }
 
 }
