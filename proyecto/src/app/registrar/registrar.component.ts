@@ -21,6 +21,7 @@ export class RegistrarComponent implements OnInit {
 
   insertar(){
     this.registrarservicio.insertar(this.usuario).subscribe(res =>{
+      alert("¡Te has registrado con éxito!")
       console.log(res)
     },
     err => console.log(err)

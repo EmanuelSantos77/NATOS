@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http'; //se importa para la comunica
 })
 export class LoginService {
 
-  private Loginurl = ""
+  private Loginurl = 'http://localhost:3000/user/login'
 
   constructor(private http: HttpClient) { }
 

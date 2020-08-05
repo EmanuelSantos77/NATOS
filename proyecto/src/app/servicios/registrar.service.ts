@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RegistrarService {
 
-private Registrar = "http://localhost:300/user/registrar"
+private Registrar = "http://localhost:3000/user/registrar"
 
   constructor(private http:HttpClient) { }
 
