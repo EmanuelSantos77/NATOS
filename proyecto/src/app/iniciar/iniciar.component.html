@@ -13,24 +13,24 @@
   <div id="back">
     <!--Imagenes-->
     <div class="backRight"></div>
-    <div class="backLeft"></div>
+    <div class="backLeft" style="border-radius: 20px 0px 0px 20px;"></div>
   </div>
   
-  <div id="slideBox" >
+  <div id="slideBox" style="border-radius: 0px 20px 20px 0px;">
     <div class="topLayer">
       <div class="right">
         <div class="content">
-          <h2>Bienvenido</h2>
+          <h1>Bienvenido</h1>
           <form method="post" onsubmit="return false;">
             <div class="form-group">
               <label for="username" class="form-label">Usuario</label>
-              <input type="text" />
+              <input type="text" [(ngModel)]="usuario.username"/>
             </div>
             <div class="form-group">
               <label for="password" class="form-label">Contraseña</label>
-              <input type="password" />
+              <input type="password" [(ngModel)]="usuario.password"/>
             </div>
-            <button id="login" type="submit">Confirmar</button>
+            <button id="login" type="submit" style="border-radius: 20px;">Confirmar</button>
           </form>
         </div>
       </div>
